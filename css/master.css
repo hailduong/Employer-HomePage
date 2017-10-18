@@ -1,0 +1,33 @@
+/*Header*/
+#page-header{ background:#fff }
+.header.container{ width:960px !important; margin:inherit auto; background:none !important }
+header{ position:relative; *z-index:100; padding:0 }
+.header-info{ text-align:right; padding-top:5px }
+.header-info .welcome{ margin-top:16px; position:relative }
+.header-info .welcome-inner{ float:right }
+a.localization{ color:#333; margin-right:10px; font-weight:bold; *position:relative; *top:-5px; text-decoration:underline }
+a.localization:hover{ color:#f7941d }
+.jobseeker-site{ display:inline-block; padding:5px 15px; background:#2bb732; color:#fff; font-weight:bold; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px }
+.jobseeker-site span{ margin-right:5px }
+.jobseeker-site a{ text-transform:uppercase; color:#fff !important; text-decoration:underline }
+.jobseeker-site:hover a{ color:#f7941d }
+.logo{ display:block }
+.logo img{ padding:10px 0; max-width:none; height:68px; width:221px }
+
+/* Footer */
+footer{ padding:50px 0 }
+footer a{ color:#333 }
+footer ul{ margin-left:0; list-style:none }
+footer h3{ font-size:18px }
+footer.jp h3{ font-size:16px }
+footer .item1{ width:200px }
+footer .item2{ margin-left:-20px; width:180px }
+footer.vi .item2{ margin-left:-35px }
+footer .item3{ margin-left:-100px; width:180px }
+footer .item3 a{ overflow:hidden; display:block; margin:20px 0 }
+footer .item3 a img{ width:150px; height:44px }
+footer .item4{ margin-left:-160px; text-align:right }
+footer .item4 a{ text-decoration:none }
+footer .item4 a img{ width:25px; height:25px }
+footer .item4 h3{ margin-bottom:15px }
+footer .copyright{ margin-top:30px }

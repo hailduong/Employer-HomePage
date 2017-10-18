@@ -1,0 +1,246 @@
+@import "../jobseekers/variables";
+@import "../jobseekers/mixins";
+body{ min-width:960px }
+.jp *{ font-family:Meiryo, verdana, sans-serif }
+[class*=" icon-"], [class^=icon-]{ background-image:url(https://images.vietnamworks.com/img/employers/sprite-icon.png) }
+.main-content.fixed-navbar{ padding-top:40px }
+.navigation{ border-top:2px solid #0d97c2; height:38px; line-height:40px; color:#00b9f2; font-size:1em; position:relative; z-index:1039; box-shadow:0; transition-property:box-shadow, height; -webkit-transition-property:box-shadow, height; -moz-transition-property:box-shadow, height; -o-transition-property:box-shadow, height; transition-duration:1s, .5s; -moz-transition-duration:1s, .5s; -webkit-transition-duration:1s, .5s; -o-transition-duration:1s, .5s; background:#00b9f2 }
+.navigation .phone-wrapper{ background:url(https://images.vietnamworks.com/img/employers/bg-phone-number.png) no-repeat; width:376px; height:46px; position:absolute; top:-8px; right:0; padding-left:20px; transition:top .5s; -moz-transition:top .5s; -webkit-transition:top .5s; -o-transition:top .5s }
+.navigation .phone-number{ float:left; transition:width .5s; -moz-transition:width .5s; -webkit-transition:width .5s; -o-transition:width .5s; line-height:46px }
+.navigation .phone-number:first-child{ margin-right:15px }
+.navigation .phone-number strong{ color:#f90; font-size:1.1em }
+.jp .navigation .icon-phone{ float:left; margin-right:0; margin-top:11px; margin-left:-2px }
+.jp .navigation .item2{ float:left; width:345px; margin-top:4px }
+.jp .navigation .phone-number{ line-height:18px; clear:both; width:360px }
+.navigation .container{ position:relative }
+.navigation a.btn{ display:none; margin-top:0 }
+.navigation .dropdown .caret{ border-top-color:#fff; transform:margin-top 1s; -moz-transform:margin-top 1s; -webkit-transform:margin-top 1s; -o-transform:margin-top 1s }
+.navigation .navbar .nav li.dropdown > a:hover .caret, .navigation.navigation .navbar .nav > li > a .navbar .nav li.dropdown > a:focus .caret{ border-top-color:#196e89 }
+.navigation .navbar .nav > li > .dropdown-menu:after{ left:106px }
+.vi .navigation .navbar .nav > li > .dropdown-menu:after{ left:93px }
+.navigation .dropdown a{ text-decoration:none }
+.navigation .icon-phone{ vertical-align:-7px; margin-right:5px }
+.navigation .contact-us-button{ position:absolute; top:0; right:0 }
+.navigation .navbar-inner{ box-shadow:none; border:0; color:#fff; font-weight:700; background:#00b9f2; border-radius:0; padding-left:0; padding-right:0; filter:none; min-height:1px; height:37px }
+.navigation .navbar{ position:relative; transition:width .2s; -moz-transition:width .2s; -webkit-transition:width .2s; -o-transition:width .2s; margin-bottom:0 }
+.navigation .navbar li{ line-height:17px; transition:line-height .5s; -moz-transition:line-height .5s; -webkit-transition:line-height .5s; -o-transition:line-height .5s }
+.navigation .navbar .nav > li > a{ color:#fff; text-shadow:none; transition:color .2s; -moz-transition:color .2s; -webkit-transition:color .2s; -o-transition:color .2s; outline:0; padding:10px 18px; font-size:1.077em; cursor:pointer }
+.jp .navigation .navbar .nav > li > a{ padding:10px }
+.navigation .navbar .nav > li > a.first-item{ padding-left:0 }
+.navigation .navbar .nav > li > a:hover{ color:#197692 }
+.navigation .navbar .nav > .active > a{ background:0 0; color:#196e89; box-shadow:none; -webkit-box-shadow:none; -moz-box-shadow:none }
+.navigation.fixed{ position:fixed; top:-1px; box-shadow:0 0 50px #053b4d; width:100%; height:44px }
+.navigation.fixed .phone-wrapper{ top:-2px }
+.navigation.fixed .navbar li{ line-height:24px }
+.navigation.fixed .caret{ margin-top:11px; *margin-top:7px }
+.banner{ height:404px; background:url(https://images.vietnamworks.com/img/employers/banner-background.jpg) no-repeat; background-size:cover; -moz-background-size:cover; -webkit-background-size:cover; -o-background-size:cover; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://images.vietnamworks.com/img/employers/banner-background.jpg', sizingMethod='scale'); -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://images.vietnamworks.com/img/employers/banner-background.jpg', sizingMethod='scale')" }
+.banner h1{ color:#0d97c2; margin-top:70px; margin-bottom:20px }
+.banner h1 span{ margin-left:15px }
+.jp .banner h1{ margin-left:-19px; font-size:32px; margin-top:50px }
+.banner ul{ margin-left:0; list-style:none; font-size:1.75em }
+.banner ul li{ line-height:1.8em; color:#333 }
+.banner li span[class^=icon-]{ margin-right:10px }
+.jp section.banner span.icon-user{ background:url(https://images.vietnamworks.com/img/employers/sprite-icon.png) no-repeat; background-position:-120px 0; width:24px; height:24px }
+.banner .icon-text{ margin-left:2px }
+.banner .icon-mail{ margin-top:5px }
+.banner .btn-large{ margin-top:15px; font-family:Arial, Verdana, sans-serif }
+.banner .contact-us{ margin-top:35px; display:inline-block; margin-left:-10px; font-size:18px; cursor:pointer }
+.jp .banner .contact-us{ margin-left:-70px }
+.banner .counter-wrapper{ position:relative; display:inline-block }
+.banner .counter{ font-size:0; margin-right:10px; position:absolute; top:7px; *top:2px; left:40px; z-index:2; overflow:hidden }
+.banner .counter.real .seperator{ visibility:hidden }
+.banner .counter.reset{ display:none; z-index:1 }
+.banner .text{ display:inline-block; margin-left:140px; *position:relative; *left:160px; *margin-left:0 }
+.jp .banner .text{ margin-left:0 }
+.jp .banner .text2{ margin-left:140px }
+.jp .banner .counter{ margin-left:187px; top:5px }
+.banner .counter span{ color:#fff; background:#333; display:inline-block; font-weight:700; height:25px; width:20px; line-height:25px; text-align:center; font-size:18px; margin-right:1px; position:relative }
+.banner .counter.reset span{ color:#333 }
+.banner .counter .seperator{ font-size:18px; color:#333; background:0 0; width:auto; position:relative; bottom:-5px }
+.banner .video-player{ width:380px; height:270px; background:url(https://images.vietnamworks.com/img/employers/video_thumbnail.jpg) no-repeat; margin-top:70px; position:relative; cursor:pointer; left:0 }
+.banner .video-player .play-button{ width:87px; height:87px; background:url(https://images.vietnamworks.com/img/employers/video-play-button.png) no-repeat; display:block; position:absolute; top:89px; left:140px; z-index:10; cursor:pointer; -webkit-transition-duration:2s; -moz-transition-duration:2s; -o-transition-duration:2s; transition-duration:2s; -webkit-transition-property:-webkit-transform; -moz-transition-property:-moz-transform; -o-transition-property:-o-transform; transition-property:transform }
+.banner .video-player .play-button:hover{ -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -o-transform:rotate(360deg) }
+.vi .banner{ border-bottom:solid 7px #00b9f2 }
+#player.modal .modal-body{ overflow:hidden; margin-bottom:0; padding-bottom:0 }
+.real-stat{ background:#00b9f2; text-align:center; color:#fff; padding-bottom:35px }
+.real-stat h1{ text-align:center; margin:15px 0 }
+.real-stat h1 small{ color:#fff }
+.real-stat h2{ color:#fff; font-size:40px }
+.real-stat h2 small{ font-weight:400; font-size:40px; color:#fff }
+.real-stat .span3 span{ font-size:1.25em }
+.real-stat .seperator{ border-left:1px solid #fff; margin-left:-10px; padding-left:10px }
+.jp .real-stat .seperator{ height:100px }
+.services{ padding:50px 0 }
+.services h1{ text-align:center; color:#0d97c2; margin:10px 0 }
+.services .title-description{ text-align:center; color:#0d97c2; font-size:24px; margin-bottom:20px }
+.services .detail [class^=icon-]{ float:left; margin-right:10px; cursor:pointer }
+.services .strike-line{ border-top:1px solid #0d97c2; display:inline-block; padding:0 20px; height:1px; width:160px; text-align:center; margin-top:25px }
+.services .strike-line h2{ font-size:1.25em; text-transform:uppercase; color:#0d97c2; display:inline-block; background:#fff; margin:0; position:relative; top:-17px; padding:0 5px; cursor:pointer }
+.jp .services .strike-line h2{ font-size:13px }
+.services .detail{ padding-top:15px }
+.services .detail ul{ margin:15px 0; list-style:none }
+.services .detail ul li{ padding-left:20px; background:url(https://images.vietnamworks.com/img/employers/bullet-double-arrow.png) no-repeat; background-position:0 7px }
+.services [class^=inner]{ width:280px }
+.services .inner1{ margin-left:30px; cursor:pointer }
+.services .inner2{ margin-left:10px; cursor:pointer }
+.services .inner3{ cursor:pointer }
+.services .inner1 h2{ left:-22px }
+.services .inner2 h2{ left:-19px }
+.services .inner3 h2{ left:-20px }
+.services .service-header{ overflow:hidden }
+.services .action .btn{ width:140px }
+.services .action{ text-align:center }
+.services .product-previews{ position:relative; height:300px; margin-top:20px }
+.services .preview{ width:266px; height:auto; position:absolute; .opacity(0.4); z-index:5; top:110px }
+.services .resume-viewing{ right:62px }
+.services .brand-exposure{ left:337px }
+.services .job-posting{ left:62px }
+.services .active-preview-middle{ .opacity(1); width:484px; height:auto; top:0; margin-left:-121px }
+.services .active-preview-left{ .opacity(1); width:483px; height:auto; top:0; margin-left:-62px }
+.services .active-preview-right{ .opacity(1); width:483px; height:auto; top:0; margin-right:-62px }
+.services .icon-go-left{ cursor:pointer; top:150px; left:0; position:absolute; z-index:20; .opacity(0.1); transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -o-transition:opacity .5s }
+.services .icon-go-right{ cursor:pointer; top:150px; right:0; position:absolute; z-index:20; .opacity(0.1); transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -o-transition:opacity .5s }
+.services .icon-go-left:hover, .services .icon-go-right:hover{ .opacity(1); }
+.services .tip{ position:absolute; display:block; .opacity(0); transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -o-transition:opacity .5s }
+.services .tip.active{ .opacity(1); }
+.services .tip.one{ background:url(https://images.vietnamworks.com/img/employers/job-detail.png) no-repeat; width:410px; height:111px; z-index:50; top:50px; left:360px }
+.vi .services .tip.one{ background:url(https://images.vietnamworks.com/img/employers/job-detail-vi.png) no-repeat; width:410px; height:111px; z-index:50; top:0; left:360px }
+.jp .services .tip.one{ background:url(https://images.vietnamworks.com/img/employers/job-detail-jp.png) no-repeat; width:410px; height:111px; z-index:50; top:0; left:360px }
+.services .tip.two{ background:url(https://images.vietnamworks.com/img/employers/your-logo-here.png) no-repeat; width:276px; height:110px; z-index:50; top:50px; left:50px }
+.vi .services .tip.two{ background:url(https://images.vietnamworks.com/img/employers/your-logo-here-vi.png) no-repeat; width:339px; height:110px; z-index:50; top:50px; left:0 }
+.jp .services .tip.two{ background:url(https://images.vietnamworks.com/img/employers/your-logo-here-jp.png) no-repeat; width:339px; height:110px; z-index:50; top:50px; left:0 }
+.services .tip.three{ background:url(https://images.vietnamworks.com/img/employers/resume-detail.png) no-repeat; width:465px; height:110px; z-index:50; top:20px; left:100px }
+.vi .services .tip.three{ background:url(https://images.vietnamworks.com/img/employers/resume-detail-vi.png) no-repeat; width:500px; height:110px; z-index:50; top:20px; left:100px }
+.jp .services .tip.three{ background:url(https://images.vietnamworks.com/img/employers/resume-detail-jp.png) no-repeat; width:500px; height:110px; z-index:50; top:20px; left:100px }
+.special-offer{ background:#00b9f2; color:#fff; padding:20px 0 2px }
+.special-offer h3{ margin:0 }
+.jp .special-offer h3{ margin:0; margin-top:10px }
+.vi .special-offer h3{ font-size:1.75em }
+.vi .special-offer .container .row > .span3{ width:250px }
+.vi .special-offer .container .row > .span9{ width:670px }
+.vi .special-offer .container input[type=email]{ width:500px; left:-25px }
+.vi .special-offer .description{ margin-left:2px }
+.special-offer input[type=email]{ position:relative; left:-30px; margin-right:-10px; border:none }
+.jp .special-offer input[type=email]{ left:-50px }
+.special-offer .btn-highlight{ width:160px; *width:auto; background:#0d97c2; font-weight:700; color:#fff }
+.special-offer .error, .special-offer .success{ margin-left:-30px }
+form.form-inline input{ *float:left; *display:block }
+form.form-inline button{ *float:right; *display:block; *height:40px }
+.special-offer .btn-highlight:hover{ background:#0b7599 }
+.special-offer .description{ font-size:14px }
+.popover{ border:1px solid #7cc0d6; -moz-border-radius:0; border-radius:0; -webkit-box-shadow:0 0 10px rgba(3, 3, 3, .2); -moz-box-shadow:0 0 10px rgba(3, 3, 3, .2); box-shadow:0 0 10px rgba(3, 3, 3, .2) }
+.popover.top .arrow{ border-top-color:#7cc0d6 }
+.contact{ background:url(https://images.vietnamworks.com/img/employers/hcm-background.png) no-repeat; background-size:cover; height:695px; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://images.vietnamworks.com/img/employers/hcm-background.png', sizingMethod='scale'); -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://images.vietnamworks.com/img/employers/hcm-background.png', sizingMethod='scale')" }
+.contact h1{ color:#00b9f2; text-transform:uppercase; margin-top:100px; margin-left:180px; margin-bottom:30px }
+.contact .vietnam-map{ background:url(https://images.vietnamworks.com/img/employers/map.png) no-repeat; height:562px; width:500px; margin-top:60px; position:relative }
+.contact .control-group.error input{ color:#333; border:1px solid red; width:426px }
+.contact .control-group.error .help-block{ padding:0 0 6px }
+.contact .control-group{ margin-bottom:30px }
+.contact .control-group.error{ margin-bottom:10px }
+.contact .control-group select{ width:439px; height:40px; }
+@-moz-document url-prefix(){
+	.contact .control-group select{ padding-top:10px }
+}
+.contact input[type=text]{ width:426px; }
+.contact label{ color:#fff }
+.contact div.error label.control-label{ color:#fff }
+.contact button{ width:170px }
+.contact .add-note{ margin-top:-10px; margin-bottom:20px }
+.contact .add-note .controls{ *margin-left:180px; *padding-left:0 }
+.contact .add-note .hidden-content .controls{ *margin-left:20px }
+.contact .add-note a{ cursor:pointer }
+.contact .hn{ position:absolute; top:70px; left:130px; z-index:10 }
+.contact .hcm{ position:absolute; top:460px; left:170px; z-index:10 }
+.contact .ha-noi{ height:auto; width:10px; display:block; position:absolute; top:75px; left:135px; z-index:5 }
+.contact .ho-chi-minh{ height:auto; width:10px; display:block; position:absolute; top:470px; left:175px; z-index:5 }
+.contact .ha-noi.active{ width:246px }
+.contact .ho-chi-minh.active{ width:216px; top:345px; left:-5px }
+.contact .hidden-content{ display:none; overflow:hidden }
+.contact .submit-success p{ color:#fff; font-size:2.2em; line-height:100px; text-align:left; margin-top:190px; margin-left:170px }
+.contact .submit-success p strong{ font-size:1.2em }
+.contact .submit-success p span{ display:block; line-height:40px }
+.jp .contact .icon-pin{ display:none }
+.clients{ background:#00b9f2; color:#fff; border-bottom:3px solid #0d97c2; padding:20px 0 15px }
+.clients .group{ display:inline-block; *display:inline; *zoom:1; float:left }
+.clients h3{ margin:0; padding-top:10px }
+.jp .clients h3{ font-size:14px }
+.jp p.description{ font-size:14px }
+.vi .clients h3{ margin-bottom:5px }
+.clients .logos{ position:relative; padding:0 40px }
+.clients .icon-go-left, .clients .icon-go-right{ position:absolute }
+.clients .icon-go-right{ right:0; top:18px; .opacity(0.5); cursor:pointer; transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -o-transition:opacity .5s }
+.clients .icon-go-left{ left:0; top:18px; .opacity(0.5); cursor:pointer; transition:opacity .5s; -moz-transition:opacity .5s; -webkit-transition:opacity .5s; -o-transition:opacity .5s }
+.clients .icon-go-left:hover, .clients .icon-go-right:hover{ .opacity(1); }
+.clients .description{ font-size:14px; margin:0 }
+.clients .inner-content{ border-right:1px solid #fff; height:66px }
+.clients .logos-container{ position:absolute; top:0; left:0; font-size:0; height:66px }
+.clients .logo{ margin:0 13px; display:inline-block; *display:inline; zoom:1; vertical-align:middle; position:relative }
+[class^=logo-]{ background:url(https://images.vietnamworks.com/img/employers/sprite-logo.png) no-repeat; display:inline-block; .opacity(0.01); }
+[class^=logo-].white{ .opacity(1); position:absolute; top:0; left:0; z-index:10 }
+.logo-samsung{ background-position:0 -82px; height:34px; width:87px }
+.logo-samsung.white{ background-position:0 -12px; width:87px; height:34px }
+.logo-unilever{ background-position:-103px -70px; width:52px; height:57px }
+.logo-unilever.white{ background-position:-103px 0; width:52px; height:57px }
+.logo-vietjet.white{ background-position:-171px -12px; width:122px; height:35px }
+.logo-vietjet{ background-position:-171px -82px; width:122px; height:35px }
+.logo-viettel.white{ background-position:-341px -2px; width:81px; height:52px }
+.logo-viettel{ background-position:-341px -72px; width:81px; height:52px }
+.logo-vng.white{ background-position:-442px 0; width:39px; height:57px }
+.logo-vng{ background-position:-442px -70px; width:39px; height:57px }
+.logo-tcb.white{ background-position:-507px -2px; width:119px; height:57px }
+.logo-tcb{ background-position:-507px -72px; width:119px; height:57px }
+.logo-canon.white{ background-position:0 -157px; width:123px; height:31px }
+.logo-canon{ background-position:0 -237px; width:123px; height:31px }
+.logo-gameloft.white{ background-position:-154px -148px; width:68px; height:49px }
+.logo-gameloft{ background-position:-154px -228px; width:68px; height:49px }
+.logo-pana.white{ background-position:-267px -159px; width:137px; height:27px }
+.logo-pana{ background-position:-267px -239px; width:137px; height:27px }
+.logo-manu.white{ background-position:-431px -159px; width:198px; height:57px }
+.logo-manu{ background-position:-431px -225px; width:198px; height:57px }
+.logo-hvnash.white{ background-position:-660px -151px; width:73px; height:53px }
+.logo-hvnash{ background-position:-660px -231px; width:73px; height:53px }
+.logo-fpt.white{ background-position:-763px -150px; width:86px; height:56px }
+.logo-fpt{ background-position:-763px -230px; width:86px; height:56px }
+.slider-clipper{ width:620px; overflow:hidden; position:relative; height:66px }
+#noRespond, #yesRespond{ display:none }
+#yesRespond .hide .modal-body{ padding:13px 0 }
+#noRespond .modal-body, #yesRespond .modal-body{ margin-bottom:0 }
+#noRespond .contact-info, #yesRespond .contact-info{ text-align:left; margin-top:30px }
+#marpromo-popup{ background:transparent url(https://images.vietnamworks.com/gen/mar-popup-bg.jpg) no-repeat top center; width:700px; height:515px; margin-left:-350px; border:0; padding:0 }
+#marpromo-popup .controls-row{ *margin-bottom:10px }
+#marpromo-popup .modal-body{ padding-bottom:5px; *padding-top:0; margin-bottom:0 }
+#marpromo-popup .modal-footer{ box-shadow:none; -webkit-box-shadow:none; -moz-box-shadow:none }
+#marpromo-popup form{ margin-top:340px; margin-left:87px; margin-bottom:0 }
+#marpromo-popup input[type=text]{ width:238px; height:22px; line-height:22px }
+#marpromo-popup .modal-header{border-bottom:none; background:none}
+#marpromo-popup .modal-header .close{ margin-top:-18px; *margin-top:-25px }
+#marpromo-popup .modal-footer input[type=submit]{ margin-right:89px; width:120px }
+#marpromo-popup .text-error{ margin-bottom:0; float:left; text-align:left; width:390px }
+
+.text-orange{ color:@brand-primary }
+// Top Banner
+.top-banner{ background-color:#f2f1f9; position:relative; display:none!important; }
+.top-banner .inner-banner{ display:block }
+.top-banner .close{ position:absolute; top:10px; right:10px }
+.top-banner a, .top-banner img{ outline:0; border:0 }
+.top-banner{
+	background:#fff5c7;
+	box-shadow:0px 0px 6px 0px rgba(97, 23, 0, 0.39);
+	h1{ font-size:20px; font-family:arial, verdana, sans-serif; line-height:20px; margin:15px 0 6px; font-weight:normal; }
+	.score{font-size:15px;}
+	p{margin-bottom:12px;}
+}
+
+// WHy VietnamWorks
+.why-vnw{ font-size:14px; padding-top:55px; background:#f7f7f7; padding-bottom:45px }
+.why-vnw .container{ position:relative }
+.why-vnw h1{ font-size:28px; font-family:arial, sans-serif; color:#0d97c2; margin-top:0; margin-bottom:25px }
+.why-vnw ul{ margin-left:0; padding-left:0; list-style:none }
+.why-vnw li{ margin-left:0; line-height:20px; margin-bottom:23px; background:url(https://images.vietnamworks.com/gen/dark-blue-right-arrow.png) no-repeat; background-position:0 5px; padding-left:15px }
+.why-vnw strong{ display:block }
+.why-vnw .client h3{ font-size:16px; text-transform:uppercase; color:#0d97c2; margin-bottom:40px; padding-left:95px }
+.why-vnw .client .logos{ background:url(https://images.vietnamworks.com/gen/cusomter-logos.png) no-repeat; width:198px; height:356px; float:right }
+.why-vnw .seperator{ height:230px; width:1px; border-left:1px dashed #c9d1d4; position:absolute; top:160px; right:260px }
+.why-vnw.vi li{ line-height:21px }
+.why-vnw.vi .client h3{ padding-left:90px }
+.footer-wrapper.vi{ background-color:#f7f7f7; border-top:7px solid #00b9f2 }
